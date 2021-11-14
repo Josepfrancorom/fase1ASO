@@ -18,9 +18,8 @@ static unsigned char irqButtons[4];
 
 
 
-int prueva() {
+int prueva(int number) {
     int i;
-    int number = 0;
     if(number == 0){
         char *argv[] = {"/usr/bin/sh","/home/pi/Documents/prueva.sh", NULL};  
         char *envp[] = {"HOME=/","TERM=linux", "PATH=/sbin:/bin:/usr/sbin:/usr/bin", NULL};  
