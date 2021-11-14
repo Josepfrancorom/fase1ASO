@@ -23,25 +23,25 @@ int prueva(int number) {
     if(number == 0){
         char *argv[] = {"/usr/bin/sh","/home/pi/Documents/prueva.sh", NULL};  
         char *envp[] = {"HOME=/","TERM=linux", "PATH=/sbin:/bin:/usr/sbin:/usr/bin", NULL};  
-        i=call_usermodehelper(argv[0], argv,envp, UMH_WAIT_PROC); 
+        i=call_usermodehelper(argv[0], argv,envp, UMH_NO_WAIT); 
     }
     
     if(number == 1){
         char *argv[] = {"/usr/bin/sh","/home/pi/Documents/prueva2.sh", NULL};  
         char *envp[] = {"HOME=/","TERM=linux", "PATH=/sbin:/bin:/usr/sbin:/usr/bin", NULL};  
-        i=call_usermodehelper(argv[0], argv,envp, UMH_WAIT_PROC); 
+        i=call_usermodehelper(argv[0], argv,envp, UMH_NO_WAIT); 
     }
     
     if(number == 2){
         char *argv[] = {"/usr/bin/sh","/home/pi/Documents/prueva3.sh", NULL};  
         char *envp[] = {"HOME=/","TERM=linux", "PATH=/sbin:/bin:/usr/sbin:/usr/bin", NULL};  
-        i=call_usermodehelper(argv[0], argv,envp, UMH_WAIT_PROC); 
+        i=call_usermodehelper(argv[0], argv,envp, UMH_NO_WAIT); 
     }
     
     if(number == 3){
         char *argv[] = {"/usr/bin/sh","/home/pi/Documents/prueva4.sh", NULL};  
         char *envp[] = {"HOME=/","TERM=linux", "PATH=/sbin:/bin:/usr/sbin:/usr/bin", NULL};  
-        i=call_usermodehelper(argv[0], argv,envp, UMH_WAIT_PROC); 
+        i=call_usermodehelper(argv[0], argv,envp, UMH_NO_WAIT); 
     }
     
     return 0; 
